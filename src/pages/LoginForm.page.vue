@@ -13,37 +13,6 @@ const registerMdp = ref('');
 const confirmMdp = ref('');
 const activeTab  = ref('Inscription');
 
-//
-// const Login = async () => {
-//   try {
-//     const response = await loginUser(
-//       email.value,
-//       mdp.value
-//     );
-//     console.log('Utilisateur connecté :', response);
-//   } catch (error) {
-//     console.error('Erreur de connexion :', error);
-//   }
-// };
-//
-// const Create = async () => {
-//   try {
-//     if (registerMdp.value !== confirmMdp.value) {
-//       console.error('Les mots de passe ne correspondent pas.');
-//       return;
-//     }
-//
-//     const response = await createUser(
-//         registerEmail.value,
-//         registerMdp.value
-//     );
-//     activeTab .value = 'Connexion';
-//     console.log('Utilisateur créé :', response);
-//   } catch (error) {
-//     console.error('Erreur lors de l’inscription :', error);
-//   }
-// };
-
   const userStore = useUserStore();
 
   const Create = async () => {
