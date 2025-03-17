@@ -32,10 +32,10 @@ const confirmMdp = ref('');
 
 const Login = async () => {
   try {
-    const response = await loginUser({
-      email: email.value,
-      password: mdp.value
-    });
+    const response = await loginUser(
+      email.value,
+      mdp.value
+    );
     console.log('Utilisateur connecté :', response);
   } catch (error) {
     console.error('Erreur de connexion :', error);
@@ -49,15 +49,16 @@ const Create = async () => {
       return;
     }
 
-    const response = await createUser({
-      email: registerEmail.value,
-      password: registerMdp.value
-    });
+    const response = await createUser(
+        registerEmail.value,
+        registerMdp.value
+    );
     console.log('Utilisateur créé :', response);
   } catch (error) {
     console.error('Erreur lors de l’inscription :', error);
   }
 };
+
 </script>
 
 <template>

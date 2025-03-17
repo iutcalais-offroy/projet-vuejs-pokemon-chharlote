@@ -28,7 +28,7 @@ export const createUser = async (email, password)  => {
         console.log('Réponse de l’API :', response.data);
         return response.data;
     } catch (error) {
-        console.error('Erreur lors de la connexion :', error);
+        console.error('Erreur lors de l’inscription :', error);
         throw error;
     }
 };
