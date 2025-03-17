@@ -38,7 +38,8 @@ const getTypeColor = (type: string) => {
 </script>
 
 <template>
-  <n-card          :style="{ borderColor: getTypeColor(type.name) }"
+  <n-card
+      :style="{ borderColor: getTypeColor(type.name) }"
   >
     <template #cover>
       <img :src="imageUrl" alt="Pokemon Image">
